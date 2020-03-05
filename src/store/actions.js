@@ -17,7 +17,9 @@ export default {
       commit('goItem', goItemIndex);
     }
   },
-  packItemArr({state}) {
-    state.itemDetail = state.itemDetail.filter(item => item.typeId == 1).sort(() => .5 - Math.random());
+  packItemArr({state}, itemDetail) {
+    console.log(1);
+    state.itemDetail = itemDetail;
+    console.log(itemDetail);
   }
 }
