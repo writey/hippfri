@@ -3,5 +3,6 @@ export default {
   timer: null, // 定时器
   itemIndex: 0, // 第几题
   userAnswerArr: [], // 答案id列表
-  itemDetail: []
+  itemDetail: [],
+  token: JSON.parse(localStorage.getItem('user'))  // 
 }
