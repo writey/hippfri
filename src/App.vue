@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <transition mode="out-in">
-      <router-view/>
+      <router-view></router-view>
     </transition>
   </div>
 </template>
@@ -13,13 +13,20 @@ export default {
 </script>
 
 <style>
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100%;
 }
 .v-enter,
 .v-leave-to {
